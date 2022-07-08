@@ -8,33 +8,39 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" width="200" height="200">
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td rowspan="3">6</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>11</td>
-            
-        </tr>
-        <tr>
-            <td colspan="2">13</td>
-            <td>15</td>
-        </tr>
+    <table class="invoice-table" border="1">
+    <thead>
+        <td>PRODUCT</td>
+        <td>QTY</td>
+        <td>PRICE</td>
+    </thead>
 
+    <tbody>
+        <tr>
+            <td>Drink <span>(large)</span></td>
+            <td class="unit">1</td>
+            <td>2.90</td>
+        </tr>
+        <tr>
+            <td>Fries <span>(small)</span></td>
+            <td class="unit">2</td>
+            <td>5.00</td>
+        </tr>
+        <tr>
+            <td>Burger <span>(no pickle)</span></td>
+            <td class="unit">2</td>
+            <td>7.00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2" align="right">Total</td>
+            <td>14.90</td>
+        </tr>
+    </tfoot>
     </table>
+
+
     
 </body>
 </html>
